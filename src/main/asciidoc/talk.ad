@@ -10,16 +10,18 @@ include::footer.ad[]
 
 == Not News!
 
+"The best Softwareengineering Tips from the 60s, 70s and 80s"
+
 === We are living in a Software crisis
 
-=== The cmputers are too big!
+=== The computers are too big!
 
 [quote, Edsger Dijkstra, The Humble Programmer (EWD340), Communications of the ACM 1972]
-----
+____
 The major cause of the software crisis is that the machines have become several orders of magnitude more powerful!
 To put it quite bluntly: as long as there were no machines, programming was no problem at all;
 when we had a few weak computers, programming became a mild problem, and now we have gigantic computers, programming has become an equally gigantic problem.
-----
+____
 
 === How gigantic?
 
@@ -43,20 +45,188 @@ I call that 1 CSU (Computer Size Unit)
 
 8 * 4000 * 200 CSU = 64.000.000
 
-=== Software Engineering!
+=== You have a Garden
+
+=== 15m x 15m
+
+=== You inherit more
+
+=== 75m x 75m
+
+You can't handle it!
+
+=== Now Germany is your Garden!
+
+=== Or Europe
+
+[NOTE.speaker]
+====
+if you are running in the Cloud
+====
+
+== Software Engineering!
 
 image::margaret-hamilton.jpg[background, size=contain]
 
+[NOTE.speaker]
+====
+Margaret Hamilton coined the term to add value to the profession.
 
-=== Modularisierung (How we Structure our Software)
+It's all about professionalizing the job.
+====
 
-We are very good at this
+=== Managing the Workers
 
-Todo: gather data from twitter
+=== Managing the Work
 
-Software Factories are a Scam
+=== Managing the Artifacts
 
-Reuse öfter ein Problem als eine Lösung
+== Managing the Artifacts
+
+=== Modularize all the things
+
+=== Parnas (1972)
+
+https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf[On the Criteria To Be Used in Decomposing Systems into Modules]
+
+[NOTE.speaker]
+====
+Modularize by maximizing Information hiding.
+
+Do not modularize by flow.
+====
+
+=== Layers?
+
+* UI
+* Domain
+* Persistence
+
+=== Use Domains instead.
+
+* Customer
+* Billing
+* Orders
+* Shipping
+
+=== Maps to Microservices
+
+[NOTE.speaker]
+====
+Microservices are to be autonomous.
+
+So the can be deployed independently.
+
+Doesn't work with layers.
+
+Don't even ask about performance
+====
+
+=== ~99% reuse
+
+[NOTE.speaker]
+====
+We are actually pretty good at reuse
+====
+
+=== Build a VW Golf
+
+With parts from Bulldozers and Windfarms
+
++
+
+15kg custom parts
+
+=== Reuse is difficult
+
+=== Aim for use.
+
+=== Refactor for reuse
+
+when needed.
+
+=== Software Factories
+
+=== Are a scam.
+
+[NOTE.speaker]
+====
+The real Software Factories are compilers, build tools and CI servers.
+====
+
+== Version Control all the things
+
+=== Source Code
+
+=== Database Scripts
+
+=== Build Scripts
+
+=== Configuration
+
+=== Subversion is not acceptable anymore
+
+Just because you can attack a tank using a sabre doesn't make it a smart thing to do.
+
+
+
+
+== Managing the Work
+
+=== Project Management
+
+== List all the things that need to be done
+
+== Identify constraints
+
+[NOTE.speaker]
+====
+Walls need to be done before Roof can be build
+====
+
+== Assign people
+
+== Maximize Concurrency
+
+[NOTE.speaker]
+====
+because it shortens the total time until completion.
+====
+
+== But
+
+=== Nobody knows what you need
+
+[NOTE.speaker]
+====
+Classical project management handles that with expensive change request.
+But Software is much more maleble.
+Change can be the inexpensive standard.
+====
+
+
+
+
+=== Beware of the Specification
+
+http://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/
+
+=== But also
+
+http://dilbert.com/strip/2016-03-06
+
+
+
+
+
+== Managing the Workers
+
+
+
+
+
+
+
 
 === Projektmanagement (How we create our Software)
 
