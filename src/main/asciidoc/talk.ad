@@ -45,7 +45,7 @@ I call that 1 CSU (Computer Size Unit)
 
 8 * 4000 * 200 CSU = 64.000.000
 
-=== You have a Garden
+=== You have a garden
 
 === 15m x 15m
 
@@ -168,7 +168,72 @@ The real Software Factories are compilers, build tools and CI servers.
 
 Just because you can attack a tank using a sabre doesn't make it a smart thing to do.
 
+== Issue Tracker
 
+=== What do we want?
+
+=== Why do we want it?
+
+=== Why didn't we build it?
+
+=== What changes were made to build it?
+
+=== Every commit references an issue.
+
+=== What is the next thing to build?
+
+[NOTE.speaker]
+====
+I don't care if a PO sorts the issues.
+Or if you shuffle cards on a wall.
+====
+
+== Automatic Build
+
+=== Of course that means tests.
+
+=== Lots of tests.
+
+=== Aim for 100% coverage
+
+But don't try to reach it.
+
+=== Mostly Unit tests.
+
+Unit ≠ JUnit
+
+=== Unit Tests must be fast.
+
+=== All Tests need to be stable.
+
+What is the value of a bug fix not deployed?
+
+== Know your Tools.
+
+=== Can you write a simple programm without mouse?
+
+=== Can you do you standard Version Control Process by heart?
+
+=== Without Mouse?
+
+=== Create an issue?
+
+=== How do you inspect an expression in the debugger?
+
+=== How to trigger a breakpoint when an exception is thrown?
+
+=== Take 20 min a week to do a Kata.
+
+[NOTE.speaker]
+====
+You can do Katas for anything.
+
+Setting up a project.
+
+Deploying stuff.
+
+Working with git.
+====
 
 
 == Managing the Work
@@ -186,12 +251,14 @@ Walls need to be done before Roof can be build
 
 == Assign people
 
-== Maximize Concurrency
+== Maximize Resource Utilization
 
 [NOTE.speaker]
 ====
 because it shortens the total time until completion.
 ====
+
+== Yes, people are resources!
 
 == But
 
@@ -200,12 +267,9 @@ because it shortens the total time until completion.
 [NOTE.speaker]
 ====
 Classical project management handles that with expensive change request.
-But Software is much more maleble.
+But Software is much more malleable.
 Change can be the inexpensive standard.
 ====
-
-
-
 
 === Beware of the Specification
 
@@ -215,16 +279,232 @@ http://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/
 
 http://dilbert.com/strip/2016-03-06
 
+=== Parallel work is expensive
+
+[NOTE.speaker]
+====
+It's much easier to change something that is already there then to aim at a common moving target with multiple tasks.
+====
+
+=== Laufenburg Bridge
+
+[NOTE.speaker]
+====
+Lot's of planning which tried to solve a difficult problem (aligning a marble slab in Amsterdam with a rock in Switzerland).
+And got it wrong.
+If you build just from one side the problem goes away because you can aim at the target height directly.
+In software this is very often rather easy.
+====
+
+=== Incentives for bigger projects
+
+[NOTE.speaker]
+====
+Small projects have better chance of success.
+If they fail, damage is less.
+
+Management bonuses often tied to
+- team size
+- project size
+- they don't have to pay for project failures.
+====
+
+== Something is wrong.
+
+=== Classical PM builds on core assumptions.
+
+=== You can employ central control.
+
+[NOTE.speaker]
+====
+This essentially means that the team and it's environment.
+Might be simple or complicated but not complex.
+
+Only simple or complicated systems allow to extrapolate the system behavior from
+few measurements.
+====
+
+=== Design is the hard part.
+
+=== Implementing the design takes long.
+
+=== Lots of simple tasks.
+
+=== Lots of repetitive tasks.
+
+=== You can define done without use.
+
+[NOTE.speaker]
+====
+Almost all parts of a project have been done before.
+Only the combination is new.
+====
+
+=== Change is expensive
+
+=== All but one are wrong.
+
+=== Software Development is complex.
+
+[NOTE.speaker]
+====
+Minute details can have huge effects.
+
+* A talk a team member watched.
+* A fight a team member had at home.
+* A feature that got added or not.
+
+You can't predict the future from the past.
+====
+
+
+=== Design is still hard.
+
+[NOTE.speaker]
+====
+The largest part of software design happens during coding.
+====
+
+=== Implementing the design is easy.
+
+It's called compiling.
+
+=== There are few simple tasks.
+
+=== There are no repetitive tasks.
+
+[NOTE.speaker]
+====
+Simple repetitive tasks get bundled into two tasks.
+
+- creating a generic solution.
+- using the solution.
+
+One task is pretty hard, the other is trivial and is done while slurping the morning coffee.
+====
+
+=== Software is done when it's used.
+
+[NOTE.speaker]
+====
+Verification: Matches specification.
+Validation: Is fit for intended use.
+====
+
+=== Change of software can be cheap
+
+[NOTE.speaker]
+====
+Tests and clean code
+====
 
 
 
 
 == Managing the Workers
 
+... and their interactions.
+
+=== Last Milleniums knowledge.
+
+=== Kent Beck at OOP 1999
+
+"How about letting the technical people solve the technical problems?"
+
+https://twitter.com/KentBeck/status/340817063654350848
+
+[NOTE.speaker]
+====
+Everybody laught because it seemed so obvious ... and was done so rarely.
+====
+
+=== Largely ignored.
+
+=== Often misunderstood.
+
+== Managing a complex system.
+
+=== !
+
+[quote, Cilliers, Paul, "Knowing Complex Systems" Managing organizational complexity : philosophy, theory and application. - Greenwich, Conn. : IAP - Information Age Pub. Inc, ISBN 1593113196. - 2005, p. 7-19]
+____
+There is no accurate (or rather, perfect) representation of the system which is simpler than the system itself.
+____
+
+
+=== The System has to control itself.
 
 
 
+[NOTE.speaker]
+====
+Tests and clean code
+====
 
+
+=== Try something.
+
+=== Gather Feedback.
+
+=== Try again.
+
+=== More Feedback is better
+
+=== Fast Feedback is better.
+
+=== Unit Tests instead of Experimenting.
+
+Minutes -> Subseconds.
+
+=== Integration Tests instead of Manual Tests
+
+Weeks, Months -> Seconds.
+
+=== Retrospectives
+
+Months, Years -> Weeks.
+
+=== Daily Standups.
+
+??? -> Day.
+
+=== Frequent Deployments.
+
+Months, Years -> Days, Weeks.
+
+== "People are Resources"?
+
+=== Electricity + Oil => Working Machine.
+
+=== Money + Fear => Productivity.
+
+=== Works for simple tasks.
+
+[NOTE.speaker]
+====
+Work at the conveyer belt.
+====
+
+=== Detrimental for creative tasks.
+
+[NOTE.speaker]
+====
+Candle experiment.
+====
+
+=== What motivates you?
+
+=== Moving Motivators
+
+https://1qjpt15fhlq3xjfpm2utibj1-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/Management30-MovingMotivatorCards-2015-self-print-A4-GER.pdf
+
+https://management30.com/practice/moving-motivators/
+
+[NOTE.speaker]
+====
+It must be possible to fulfill all this motivators.
+A manager must understand which ones are relevant for a team member.
+====
 
 
 
@@ -286,21 +566,7 @@ You are not allowed to discard a practice until you can explain its purpose to a
 
 Erfahrung ist durch fast nichts zu ersetzen.
 
-=== Tools
 
-Version Control
-
-SVN ist not acceptable
-
-Issue Tracker
-
-Automatic Build
-CI and CD
-
-What is the value of a bug fix not deployed?
-
-A Fool with a Tool is still a Fool.
-Yet know the tools: ID. Git.
 
 
 === Build for Production
@@ -333,7 +599,47 @@ The Airforce can.
 Todo: Read twelve factors
 
 
+== moar stuff
+
+Conways law.
+-> A design effort should be organized according to the need for communication.
+This describes Microservices (autonomous, no communication to other services, build by a single team).
+
+This is the Unix philosophy:
+Write programs that do one thing and do ti well. Write programs to work together.
+-- Douglas McIlroy
+
+Define a subset of the system which is small enough to bring to an operational state [...] then build on that subsystem.
+-- E E David
+
+A software system can best be designed if the testing is interlaced with the designing instead of being used after the design.
+-- Alan Perlis
+
+We instituted a rigorous regression test for all of the features of AWK.
+Any of the trhee of us who put in a new feature into the language [...], first had to write a test for the new feature.
+-- Alfred Aho https://www.computerworld.com.au/article/216844/a-z_programming_languages_awk/?pp=5
+AWK was developed in the mid-1970s
+
+https://youtu.be/KjgvffBlWAg?t=1105
+The replicastion of multiple copies of a software system is the phase of software manufacture which corresponds to the production phase in other areas of engineering.
+http://www.scrummanager.net/files/nato1968e.pdf
+
+shortly after in the same video
+
+We may therefore picture the process of formmaking as the action of a series of subsystems, all interlinked, yet sufficiently free of one another to adjust independently in a feasilbe amount of time. It works, because the cycles of correction and recorrection, which occur during adaptation, are restricted to one subsystem at a time.
+-- Christopher Alexander, Notes on the Syntesis of Form
+
+The future is already here -- it's just not very evenly distributed.
+-- William Gibson
 
 
+"Only one thing seems to be clear just now. It is that program construction is not always a simple progression in which each act of assembly represents a distinct forward step and that the final product can be described simply as the sum of many sub-assemblies."
+
+Nato document
+
+Graham: Today we tend to go on for years, with tremendous investments to find that the system, which was not well understood to start with, does not work as anticipated. We build systems like the Wright brothers built airplanes
+— build the whole thing, push it off the cliff, let it crash, and start over again.
+
+"The need for feedback was stressed many times."
 
 include::self.ad[]
