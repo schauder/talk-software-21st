@@ -74,54 +74,114 @@ Margaret Hamilton coined the term to add value to the profession.
 It's all about professionalizing the job.
 ====
 
-=== Managing the Workers
+=== Nato Conference.
 
-=== Managing the Work
+=== Minor improvements in the decades since.
 
-=== Managing the Artifacts
+=== !
 
-== Managing the Artifacts
+[quote, Frei nach Kevlin Henney]
+____
+Die IT entdeckt nicht ständig etwas Neues. Wir vergessen bloß was wir schon längst wussten und finden es dann wieder.
+____
 
-=== Modularize all the things
 
-=== Parnas (1972)
+== Werkzeuge
 
-https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf[On the Criteria To Be Used in Decomposing Systems into Modules]
+=== Wir brauchen
+
+=== Editor oder IDE
+
+=== Versions Verwaltung
+
+=== Git oder Gitartige
+
+=== Auch für
+
+* Dokumentation
+* Datenbankskripte
+
+=== Issue Tracker
+
+=== Referenzen zwischen Commits und Issues
+
+=== Automatisierte Tests
+
+=== Continuous Integration
+
+=== Dependency Management
 
 [NOTE.speaker]
 ====
-Modularize by maximizing Information hiding.
-
-Do not modularize by flow.
+Maven oder vergleichbares.
 ====
 
-=== Layers?
 
-* UI
-* Domain
-* Persistence
+== Software Design
 
-=== Use Domains instead.
+=== Modularisierung
 
-* Customer
-* Billing
-* Orders
-* Shipping
+=== !
 
-=== Maps to Microservices
+[quote, Christopher Alexander, Notes on the Syntesis of Form, 1964]
+____
+We may therefore picture the process of formmaking as the action of a series of subsystems, all interlinked, yet sufficiently free of one another to adjust independently in a feasilbe amount of time. It works, because the cycles of correction and recorrection, which occur during adaptation, are restricted to one subsystem at a time.
+____
+
+=== !
+
+[quote, Parnas, On the Criteria To Be Used in Decomposing Systems into Modules, 1972]
+____
+It is almost always incorrect to begin the decomposition
+of a system into modules on the basis of a flowchart.
+____
+
+=== Flowchart einer Webapplikation
+
+=== Package Struktur
+
+=== !
+
+[quote, Parnas, On the Criteria To Be Used in Decomposing Systems into Modules, 1972]
+____
+instead that one begins with a list of
+difficult design decisions or design decisions which are
+likely to change. Each module is then designed to hide
+such a decision from the others.
+____
 
 [NOTE.speaker]
 ====
-Microservices are to be autonomous.
+Was genau ist ein Kunde, ein Auftrag, eine Bestellung?
 
-So the can be deployed independently.
+Irgend wann auch:
 
-Doesn't work with layers.
-
-Don't even ask about performance
+ Wie ist meine Datenbank strukturiert.
+ Welche Art von Datenbank verwende ich?
 ====
 
-=== Reuse! or Reuse?
+=== Packages, Klassen, Methoden als Baum
+
+// todo image
+
+=== Wo ändert sich etwas?
+
+// todo image
+
+=== Oder so?
+
+// todo image
+
+=== Ein Rant in Sachen Reuse.
+
+[NOTE.speaker]
+====
+Reuse ist teuer.
+
+Es ist eine Investition.
+
+Baut sauber strukturierte Code, dann ist reuse möglich, wenn nötig.
+====
 
 === ~99% reuse
 
@@ -138,195 +198,11 @@ With parts from Bulldozers and Windfarms
 
 15kg custom parts
 
-=== Reuse is difficult.
-
-=== Aim for use.
-
-=== Refactor for reuse
-
-when needed.
-
-=== Software Factories
-
-=== Are a scam.
-
-[NOTE.speaker]
-====
-The real Software Factories are compilers, build tools and CI servers.
-====
-
-== Version Control all the things
-
-=== Source Code
-
-=== Database Scripts
-
-=== Build Scripts
-
-=== Configuration
-
-=== Subversion is not acceptable anymore
-
-
-[NOTE.speaker]
-____
-
-Just because you can attack a tank using a blow torch doesn't make it a smart thing to do.
-____
-
-== Issue Tracker
-
-=== What do we want?
-
-=== Why do we want it?
-
-=== Why didn't we build it?
-
-=== What changes were made to build it?
-
-=== Every commit references an issue.
-
-=== What is the next thing to build?
-
-[NOTE.speaker]
-====
-I don't care if a PO sorts the issues.
-Or if you shuffle cards on a wall.
-====
-
-== Automatic Build
-
-=== Of course that means tests.
-
-=== Lots of tests.
-
-=== Aim for 100% coverage
-
-But don't try to reach it.
-
-=== Mostly Unit tests.
-
-Unit ≠ JUnit
-
-=== Unit Tests must be fast.
-
-=== All Tests need to be stable.
-
-== Know your Tools.
-
-=== Can you write a simple programm without mouse?
-
-=== Can you do you standard Version Control Process by heart?
-
-=== Without Mouse?
-
-=== Create an issue?
-
-=== How do you inspect an expression in the debugger?
-
-=== How to trigger a breakpoint when an exception is thrown?
-
-=== Take 20 min a week to do a Kata.
-
-[NOTE.speaker]
-====
-You can do Katas for anything.
-
-Setting up a project.
-
-Deploying stuff.
-
-Working with git.
-====
-
-
-== Managing the Work
-
-=== Project Management
-
-== List all the things that need to be done
-
-== Identify constraints
-
-[NOTE.speaker]
-====
-Walls need to be done before Roof can be build
-====
-
-== Assign people
-
-== Maximize Resource Utilization
-
-[NOTE.speaker]
-====
-because it shortens the total time until completion.
-====
-
-== Yes, people are resources!
-
-== But
-
-=== Nobody knows what you need
-
-[NOTE.speaker]
-====
-Classical project management handles that with expensive change request.
-But Software is much more malleable.
-Change can be the inexpensive standard.
-====
-
-=== Beware of the Specification
-
-http://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/
-
-=== But also
-
-http://dilbert.com/strip/2016-03-06
-
-=== Parallel work is expensive
-
-[NOTE.speaker]
-====
-It's much easier to change something that is already there then to aim at a common moving target with multiple tasks.
-====
-
-=== Laufenburg Bridge
-
-[NOTE.speaker]
-====
-Lot's of planning which tried to solve a difficult problem (aligning a marble slab in Amsterdam with a rock in Switzerland).
-And got it wrong.
-If you build just from one side the problem goes away because you can aim at the target height directly.
-In software this is very often rather easy.
-====
-
-=== Incentives for bigger projects
-
-[NOTE.speaker]
-====
-Small projects have better chance of success.
-If they fail, damage is less.
-
-Management bonuses often tied to
-- team size
-- project size
-- they don't have to pay for project failures.
-====
-
-== Something is wrong.
+== Prozesse, Menschen und komplexe Systeme
 
 === Classical PM builds on core assumptions.
 
 === You can employ central control.
-
-[NOTE.speaker]
-====
-This essentially means that the team and it's environment.
-Might be simple or complicated but not complex.
-
-Only simple or complicated systems allow to extrapolate the system behavior from
-few measurements.
-====
 
 === Design is the hard part.
 
@@ -337,12 +213,6 @@ few measurements.
 === Lots of repetitive tasks.
 
 === You can define "done" without use.
-
-[NOTE.speaker]
-====
-Almost all parts of a project have been done before.
-Only the combination is new.
-====
 
 === Change is expensive
 
@@ -361,6 +231,14 @@ Minute details can have huge effects.
 You can't predict the future from the past.
 ====
 
+
+=== !
+
+[quote, Cilliers, Paul, "Knowing Complex Systems" Managing organizational complexity : philosophy, theory and application. - Greenwich, Conn. : IAP - Information Age Pub. Inc, ISBN 1593113196. - 2005, p. 7-19]
+____
+There is no accurate (or rather, perfect) representation of the system which is simpler than the system itself.
+____
+
 === Design is still hard.
 
 [NOTE.speaker]
@@ -371,6 +249,13 @@ The largest part of software design happens during coding.
 === Implementing the design is easy.
 
 It's called compiling.
+
+=== !
+
+[quote, NATO Software Engineering Conference 1968]
+____
+The replicastion of multiple copies of a software system is the phase of software manufacture which corresponds to the production phase in other areas of engineering.
+____
 
 === There are few simple tasks.
 
@@ -401,97 +286,59 @@ Validation: Is fit for intended use.
 Tests and clean code
 ====
 
-== Managing the Workers
+== Alternativen
 
-... and their interactions.
+===!
 
-=== Last Milleniums knowledge.
+=== Iterativ und Inkrementell
 
-=== Kent Beck at OOP 1999
-
-"How about letting the technical people solve the technical problems?"
-
-https://twitter.com/KentBeck/status/340817063654350848
-
-[NOTE.speaker]
-====
-Everybody laught because it seemed so obvious ... and was done so rarely.
-====
-
-=== Largely ignored.
-
-=== Often misunderstood.
-
-== Managing a complex system.
-
-=== !
-
-[quote, Cilliers, Paul, "Knowing Complex Systems" Managing organizational complexity : philosophy, theory and application. - Greenwich, Conn. : IAP - Information Age Pub. Inc, ISBN 1593113196. - 2005, p. 7-19]
+[quote, E. E. David, NATO Software Engineering Conference, 1968]
 ____
-There is no accurate (or rather, perfect) representation of the system which is simpler than the system itself.
+Define a subset of the system which is small enough to bring to an operational state [...] then build on that subsystem.
 ____
 
-=== The System has to control itself.
+=== Vermeidet parallele Arbeit.
+
+=== Laufenburg Bridge
 
 [NOTE.speaker]
 ====
-because any external control has to be just as complex and therefore equally unmanageable.
+Lot's of planning which tried to solve a difficult problem (aligning a marble slab in Amsterdam with a rock in Switzerland).
+And got it wrong.
+If you build just from one side the problem goes away because you can aim at the target height directly.
+In software this is very often rather easy.
 ====
 
-=== How do we do that?
-
-== Communication.
-
-=== Not more
-
-* Meetings
-
-* Forms
-
-* Newsletters
-
-=== But better Communication.
-
-[NOTE.speaker]
-====
-Can you talk to someone from a different team directly?
-How about a user of your software?
-====
-
-== Simplicity
-
-=== !
+=== Simplicity
 
 [quote, Kent Beck, Extreme Programming explained]
 ____
 What is the simplest thing that could possibly work?
 ____
 
-[NOTE.speaker]
-====
-What is the simplest thing that gets you closer to a solution?
-====
-
-== Feedback
-
-=== !
+=== Feedback
 
 [quote, NATO Software Engineering Conference 1968]
 ____
 The need for feedback was stressed many times.
 ____
 
-=== Try something.
+=== !
 
-=== Gather Feedback.
+[quote, Alan Perlis]
+____
+A software system can best be designed if the testing is interlaced with the designing instead of being used after the design.
+____
 
-=== Try again.
+=== !
 
-=== More Feedback is better
-
-=== Fast Feedback is better.
-
-=== Pair Programming.
+[quote, NATO Software Engineering Conference 1968]
+____
+1. Flowchart until you think you understand the problem.
+2. Write code until you realize that you don’t.
+3. Go back and re-do the flowcharting.
+4. Write some more code and iterate to what you feel is the correct solution.
+____
 
 === Unit Tests instead of Experimenting.
 
@@ -529,146 +376,148 @@ vs
 1st Commit on 2nd day of work and huge refactoring after 6 months.
 ====
 
-== Respect
+=== Beware of the Specification
 
-=== "People are Resources"?
+http://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/
 
-=== Electricity + Oil => Working Machine.
+=== But also
 
-=== Money + Fear => Productivity.
+http://dilbert.com/strip/2016-03-06
 
-=== Works for simple tasks.
+== Menschen
+
+=== Melonen Projekte
+
+=== Werte von XP
+
+=== Einfachheit
+
+=== Feedback
+
+=== Mut
+
+=== Respekt
+
+=== Kommunikation
+
+=== Der Fisch stinkt vom Kopf aus
+
+[quote, Peter Drucker(?)]
+____
+Culture Eats Strategy for Breakfast
+____
+
+== Fallstricke.
+
+=== "Agile löst unsere Probleme."
+
+=== Cargo Cult.
+
+=== "Retrospektiven brauchen wir nicht."
+
+=== "Management brauchen wir nicht mehr."
+
+=== The complete adventurer.
 
 [NOTE.speaker]
 ====
-Work at the conveyer belt.
+Vieles muss man erst lernen.
+
+Das braucht Zeit und Hilfe von anderen.
 ====
 
-=== Detrimental for creative tasks.
+=== Das Generationen Problem.
 
 [NOTE.speaker]
 ====
-Candle experiment.
+Vieles muss man erst lernen.
+
+Das braucht Zeit und Hilfe von anderen.
 ====
 
-=== What motivates you?
+== The latest Technology Trend
 
-=== Moving Motivators
+=== Microservices.
 
-https://1qjpt15fhlq3xjfpm2utibj1-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/Management30-MovingMotivatorCards-2015-self-print-A4-GER.pdf
+[quote, Harr, NATO Software Engineering Conference 1968]
+____
+ We definitely need better techniques for changing a program in the field while continuing to provide service.
+____
 
-https://management30.com/practice/moving-motivators/
+=== Codebase
+One codebase tracked in revision control, many deploys
 
 [NOTE.speaker]
 ====
-It must be possible to fulfill all this motivators.
-A manager must understand which ones are relevant for a team member.
+One to one relationship between App and Repository.
+====
+
+=== Dependencies
+
+Explicitly declare and isolate dependencies
+
+=== !
+
+[quote, d’Agapeyeff, NATO Software Engineering Conference 1968]
+____
+programming would be simplified if certain processes could be declarative rather than procedural
+____
+
+[NOTE.speaker]
+====
+Sagte ich Maven?
+====
+
+=== Config
+Store config in the environment.
+
+[NOTE.speaker]
+====
+Nicht in der Version Verwaltung.
 ====
 
 
+=== Backing services
+Treat backing services as attached resources.
+
+[NOTE.speaker]
+====
+Modularisierung in Höchstform.
+Wo der Service läuft ist egal und darf sich ändern ohne, dass die App etwas davon merkt.
+====
+
+===  Build, release, run
+Strictly separate build and run stages
+
+=== Processes
+Execute the app as one or more stateless processes
+
+=== Port binding
+Export services via port binding
+
+=== Concurrency
+Scale out via the process model
+
+=== Disposability
+Maximize robustness with fast startup and graceful shutdown
+
+=== Dev/prod parity
+Keep development, staging, and production as similar as possible
+
+=== Logs
+Treat logs as event streams
+
+=== Admin processes
+Run admin/management tasks as one-off processes
 
 
 
 
-== The End.
 
 
 
 
 
-
-=== The mayor difference
-
-Software is the specification.
-
-Turn around cycles are shorter by multiple magnitudes.
-
-Feedback and the ability to act on it is key to all modern ways to create SW.
-
-We need Transparency. The lack of transparency prevents Feedback.
-
-=== Standups und Retrospektiven
-
-You are not allowed to discard a practice until you can explain its purpose to a Kid and why you don't need it.
-
-"it doesn't help us" is not sufficient.
-
-"We are already really good" is not sufficient.
-
-"We are achieving this by doing x, y, z instead" might be.
-
-=== Pair Programming Mob Programming and Reviews
-
-
-=== Ausbildung
-
-Erfahrung ist durch fast nichts zu ersetzen.
-
-
-
-
-=== Build for Production
-
-Logging is not a debugging tool
-
-Metrics and visibility.
-
-=== Agile
-
-XP, Scrum, Kanban
-
-Only build what is worth building.
-
-Ever really looked forward to something and when it happened it was Meh! ?
-
-Be sceptical of Certificates.
-You need to internalize these concepts.
-
-=== Management side of things
-
-Managements task is to get problems out of the way.
-Establish boundaries to provide Feedback where it isn't immediately available.
-Set requirements that need to be met, not tools to be used.
-Offer the tools as solution options.
-
-Don't tell me you can't do it.
-The Airforce can.
-
-Todo: Read twelve factors
-
-
-== moar stuff
-
-Conways law.
--> A design effort should be organized according to the need for communication.
-This describes Microservices (autonomous, no communication to other services, build by a single team).
-
-This is the Unix philosophy:
-Write programs that do one thing and do ti well. Write programs to work together.
--- Douglas McIlroy
-
-Define a subset of the system which is small enough to bring to an operational state [...] then build on that subsystem.
--- E E David
-
-A software system can best be designed if the testing is interlaced with the designing instead of being used after the design.
--- Alan Perlis
-
-We instituted a rigorous regression test for all of the features of AWK.
-Any of the trhee of us who put in a new feature into the language [...], first had to write a test for the new feature.
--- Alfred Aho https://www.computerworld.com.au/article/216844/a-z_programming_languages_awk/?pp=5
-AWK was developed in the mid-1970s
-
-https://youtu.be/KjgvffBlWAg?t=1105
-The replicastion of multiple copies of a software system is the phase of software manufacture which corresponds to the production phase in other areas of engineering.
-http://www.scrummanager.net/files/nato1968e.pdf
-
-shortly after in the same video
-
-We may therefore picture the process of formmaking as the action of a series of subsystems, all interlinked, yet sufficiently free of one another to adjust independently in a feasilbe amount of time. It works, because the cycles of correction and recorrection, which occur during adaptation, are restricted to one subsystem at a time.
--- Christopher Alexander, Notes on the Syntesis of Form
-
-The future is already here -- it's just not very evenly distributed.
--- William Gibson
 
 
 "Only one thing seems to be clear just now. It is that program construction is not always a simple progression in which each act of assembly represents a distinct forward step and that the final product can be described simply as the sum of many sub-assemblies."
@@ -691,4 +540,13 @@ soon as the users realize what kind of problems they have."
 "I just want to make the point that reliability really is a design issue, in the sense that unless you are conscious
 of the need for reliability throughout the design, you might as well give up."
 
+
+== Referenzen
+
+
+https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf[On the Criteria To Be Used in Decomposing Systems into Modules]
+
 include::self.ad[]
+
+
+
