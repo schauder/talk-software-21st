@@ -18,8 +18,7 @@ include::footer.ad[]
 
 [quote, Edsger Dijkstra, The Humble Programmer (EWD340), Communications of the ACM 1972]
 ____
-The major cause of the software crisis is that the machines have become several orders of magnitude more powerful!
-To put it quite bluntly: as long as there were no machines, programming was no problem at all;
+as long as there were no machines, programming was no problem at all;
 when we had a few weak computers, programming became a mild problem, and now we have gigantic computers, programming has become an equally gigantic problem.
 ____
 
@@ -43,7 +42,7 @@ I call that 1 CSU (Computer Size Unit)
 
 2 GHz
 
-8 * 4000 * 200 CSU = 64.000.000
+8 * 4000 * 200 CSU = 64.000.000 CSU
 
 === You have a garden
 
@@ -122,6 +121,8 @@ Doesn't work with layers.
 Don't even ask about performance
 ====
 
+=== Reuse! or Reuse?
+
 === ~99% reuse
 
 [NOTE.speaker]
@@ -137,7 +138,7 @@ With parts from Bulldozers and Windfarms
 
 15kg custom parts
 
-=== Reuse is difficult
+=== Reuse is difficult.
 
 === Aim for use.
 
@@ -166,7 +167,12 @@ The real Software Factories are compilers, build tools and CI servers.
 
 === Subversion is not acceptable anymore
 
-Just because you can attack a tank using a sabre doesn't make it a smart thing to do.
+
+[NOTE.speaker]
+____
+
+Just because you can attack a tank using a blow torch doesn't make it a smart thing to do.
+____
 
 == Issue Tracker
 
@@ -205,8 +211,6 @@ Unit ≠ JUnit
 === Unit Tests must be fast.
 
 === All Tests need to be stable.
-
-What is the value of a bug fix not deployed?
 
 == Know your Tools.
 
@@ -332,7 +336,7 @@ few measurements.
 
 === Lots of repetitive tasks.
 
-=== You can define done without use.
+=== You can define "done" without use.
 
 [NOTE.speaker]
 ====
@@ -356,7 +360,6 @@ Minute details can have huge effects.
 
 You can't predict the future from the past.
 ====
-
 
 === Design is still hard.
 
@@ -398,9 +401,6 @@ Validation: Is fit for intended use.
 Tests and clean code
 ====
 
-
-
-
 == Managing the Workers
 
 ... and their interactions.
@@ -431,16 +431,55 @@ ____
 There is no accurate (or rather, perfect) representation of the system which is simpler than the system itself.
 ____
 
-
 === The System has to control itself.
-
-
 
 [NOTE.speaker]
 ====
-Tests and clean code
+because any external control has to be just as complex and therefore equally unmanageable.
 ====
 
+=== How do we do that?
+
+== Communication.
+
+=== Not more
+
+* Meetings
+
+* Forms
+
+* Newsletters
+
+=== But better Communication.
+
+[NOTE.speaker]
+====
+Can you talk to someone from a different team directly?
+How about a user of your software?
+====
+
+== Simplicity
+
+=== !
+
+[quote, Kent Beck, Extreme Programming explained]
+____
+What is the simplest thing that could possibly work?
+____
+
+[NOTE.speaker]
+====
+What is the simplest thing that gets you closer to a solution?
+====
+
+== Feedback
+
+=== !
+
+[quote, NATO Software Engineering Conference 1968]
+____
+The need for feedback was stressed many times.
+____
 
 === Try something.
 
@@ -451,6 +490,8 @@ Tests and clean code
 === More Feedback is better
 
 === Fast Feedback is better.
+
+=== Pair Programming.
 
 === Unit Tests instead of Experimenting.
 
@@ -472,7 +513,25 @@ Months, Years -> Weeks.
 
 Months, Years -> Days, Weeks.
 
-== "People are Resources"?
+=== !
+
+[quote, Junior Developer via E-Mail, 2018]
+____
+"We don't have time to write tests."
+____
+
+[NOTE.speaker]
+====
+Working for a year without completing a feature
+
+vs
+
+1st Commit on 2nd day of work and huge refactoring after 6 months.
+====
+
+== Respect
+
+=== "People are Resources"?
 
 === Electricity + Oil => Working Machine.
 
@@ -508,26 +567,14 @@ A manager must understand which ones are relevant for a team member.
 
 
 
-=== Projektmanagement (How we create our Software)
 
-Klassische Methoden des Projektmanagements scheinen wenig geeignet.
 
-Done ist schwer zu bestimmen, wenn es nicht genutzt wird.
 
-PM basiert auf repetitiven Tätigkeiten.
+== The End.
 
-Softwareentwicklung ist aber Kreativ.
-D.h. nicht, dass wir nicht Regeln unterliegen, die wir einhalten müssen.
 
-Metriken und Boni führen zu abstusen Optimierungen.
 
-Wasserfall ist ein Strohmann.
 
-Todo: Quelle raussuchen
-
-PM Lives in a world with little/slow feedback
-
-Hoover damn is 10x as big as it needs to be
 
 
 === The mayor difference
@@ -539,15 +586,6 @@ Turn around cycles are shorter by multiple magnitudes.
 Feedback and the ability to act on it is key to all modern ways to create SW.
 
 We need Transparency. The lack of transparency prevents Feedback.
-
-=== Test and Testability
-
-1 Jahr ohne relevanten Code
-
-vs
-
-1st commit on 2nd day released a few weeks later
-and rewrite of a big chunk within half a year.
 
 === Standups und Retrospektiven
 
@@ -641,5 +679,16 @@ Graham: Today we tend to go on for years, with tremendous investments to find th
 — build the whole thing, push it off the cliff, let it crash, and start over again.
 
 "The need for feedback was stressed many times."
+
+"We find that every design phase we go through we base strictly on the users’ reactions
+to the previous system. The users are the people who do our design, once we get started."
+
+"Users are interested in systems requirements and buy systems in that way. But that implies that they are able
+to say what they want. Most of the users aren’t able to. One of the greatest difficulties will be out of our field as
+soon as the users realize what kind of problems they have."
+
+
+"I just want to make the point that reliability really is a design issue, in the sense that unless you are conscious
+of the need for reliability throughout the design, you might as well give up."
 
 include::self.ad[]
