@@ -90,16 +90,17 @@ ____
 
 === Wir brauchen
 
-=== Editor oder IDE
+=== IDE
 
 === Versions Verwaltung
 
-=== Git oder Gitartige
+=== Git oder gitartige
 
 === Auch für
 
 * Dokumentation
 * Datenbankskripte
+* Buildskripte
 
 === Issue Tracker
 
@@ -116,6 +117,14 @@ ____
 Maven oder vergleichbares.
 ====
 
+=== Haben reicht nicht.
+
+[NOTE.speaker]
+====
+Man muss sie auch nutzen können.
+
+Ohne Maus.
+====
 
 == Software Design
 
@@ -123,14 +132,14 @@ Maven oder vergleichbares.
 
 === !
 
-[quote, Christopher Alexander, Notes on the Syntesis of Form, 1964]
+[quote, Christopher Alexander, Notes on the Synthesis of Form, 1964]
 ____
 We may therefore picture the process of formmaking as the action of a series of subsystems, all interlinked, yet sufficiently free of one another to adjust independently in a feasilbe amount of time. It works, because the cycles of correction and recorrection, which occur during adaptation, are restricted to one subsystem at a time.
 ____
 
 === !
 
-[quote, Parnas, On the Criteria To Be Used in Decomposing Systems into Modules, 1972]
+[quote, Parnas, On the Criteria To Be Used in Decomposing Systems into Modules - 1972]
 ____
 It is almost always incorrect to begin the decomposition
 of a system into modules on the basis of a flowchart.
@@ -142,7 +151,7 @@ ____
 
 === !
 
-[quote, Parnas, On the Criteria To Be Used in Decomposing Systems into Modules, 1972]
+[quote, Parnas, On the Criteria To Be Used in Decomposing Systems into Modules - 1972]
 ____
 instead that one begins with a list of
 difficult design decisions or design decisions which are
@@ -254,7 +263,7 @@ It's called compiling.
 
 [quote, NATO Software Engineering Conference 1968]
 ____
-The replicastion of multiple copies of a software system is the phase of software manufacture which corresponds to the production phase in other areas of engineering.
+The replication of multiple copies of a software system is the phase of software manufacture which corresponds to the production phase in other areas of engineering.
 ____
 
 === There are few simple tasks.
@@ -444,105 +453,21 @@ ____
  We definitely need better techniques for changing a program in the field while continuing to provide service.
 ____
 
-=== Codebase
-One codebase tracked in revision control, many deploys
-
-[NOTE.speaker]
-====
-One to one relationship between App and Repository.
-====
-
-=== Dependencies
-
-Explicitly declare and isolate dependencies
-
-=== !
-
-[quote, d’Agapeyeff, NATO Software Engineering Conference 1968]
+[quote, NATO Software Engineering Conference 1968]
 ____
-programming would be simplified if certain processes could be declarative rather than procedural
+I just want to make the point that reliability really is a design issue, in the sense that unless you are conscious
+of the need for reliability throughout the design, you might as well give up.
 ____
 
-[NOTE.speaker]
-====
-Sagte ich Maven?
-====
+== !
 
-=== Config
-Store config in the environment.
-
-[NOTE.speaker]
-====
-Nicht in der Version Verwaltung.
-====
-
-
-=== Backing services
-Treat backing services as attached resources.
-
-[NOTE.speaker]
-====
-Modularisierung in Höchstform.
-Wo der Service läuft ist egal und darf sich ändern ohne, dass die App etwas davon merkt.
-====
-
-===  Build, release, run
-Strictly separate build and run stages
-
-=== Processes
-Execute the app as one or more stateless processes
-
-=== Port binding
-Export services via port binding
-
-=== Concurrency
-Scale out via the process model
-
-=== Disposability
-Maximize robustness with fast startup and graceful shutdown
-
-=== Dev/prod parity
-Keep development, staging, and production as similar as possible
-
-=== Logs
-Treat logs as event streams
-
-=== Admin processes
-Run admin/management tasks as one-off processes
-
-
-
-
-
-
-
-
-
-
-
-"Only one thing seems to be clear just now. It is that program construction is not always a simple progression in which each act of assembly represents a distinct forward step and that the final product can be described simply as the sum of many sub-assemblies."
-
-Nato document
-
-Graham: Today we tend to go on for years, with tremendous investments to find that the system, which was not well understood to start with, does not work as anticipated. We build systems like the Wright brothers built airplanes
-— build the whole thing, push it off the cliff, let it crash, and start over again.
-
-"The need for feedback was stressed many times."
-
-"We find that every design phase we go through we base strictly on the users’ reactions
-to the previous system. The users are the people who do our design, once we get started."
-
-"Users are interested in systems requirements and buy systems in that way. But that implies that they are able
-to say what they want. Most of the users aren’t able to. One of the greatest difficulties will be out of our field as
-soon as the users realize what kind of problems they have."
-
-
-"I just want to make the point that reliability really is a design issue, in the sense that unless you are conscious
-of the need for reliability throughout the design, you might as well give up."
+[quote, William Gibson]
+____
+The future is already here -- it's just not very evenly distributed.
+____
 
 
 == Referenzen
-
 
 https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf[On the Criteria To Be Used in Decomposing Systems into Modules]
 
