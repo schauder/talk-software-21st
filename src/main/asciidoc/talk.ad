@@ -1,4 +1,4 @@
-= Software Development in the 21st century
+= Software Entwicklung im 21. Jahrhundert
 :icons: font
 :twitter-tag: @jensschauder
 :conference-tag:
@@ -8,21 +8,41 @@
 
 include::footer.ad[]
 
-== Not News!
+== Es gibt nichts Neues!
 
-"The best Softwareengineering Tips from the 60s, 70s and 80s"
+[quote, Frei nach Radio FFN]
+____
 
-=== We are living in a Software crisis
+Die best Softwareengineering Tipps aus den 60ern, 70ern und 80ern
+____
 
-=== The computers are too big!
+=== !
 
-[quote, Edsger Dijkstra, The Humble Programmer (EWD340), Communications of the ACM 1972]
+[quote, André Gide]
+____
+Everything that needs to be said has already been said. But since no one was listening, everything must be said again.
+____
+
+
+=== !
+
+[quote, Morris King Udal oder Karl Valentine]
+____
+
+Everything has been said but not everyone has said it.
+____
+
+=== Wir stecken in einer Softwarekrise.
+
+=== Die Computer sind zu groß!
+
+[quote, Edsger Dijkstra, "The Humble Programmer (EWD340), Communications of the ACM 1972"]
 ____
 as long as there were no machines, programming was no problem at all;
 when we had a few weak computers, programming became a mild problem, and now we have gigantic computers, programming has become an equally gigantic problem.
 ____
 
-=== How gigantic?
+=== Wie "gigantic"?
 
 PDP-11 (1970)
 
@@ -32,9 +52,9 @@ PDP-11 (1970)
 
 10 MHz
 
-I call that 1 CSU (Computer Size Unit)
+Ich nenne das 1 CSU (Computer Size Unit)
 
-=== My phone
+=== Mein Telefon
 
 8 Cores
 
@@ -44,23 +64,23 @@ I call that 1 CSU (Computer Size Unit)
 
 8 * 4000 * 200 CSU = 64.000.000 CSU
 
-=== You have a garden
+=== Du hast einen Garten.
 
 === 15m x 15m
 
-=== You inherit more
+=== Du erbst.
 
 === 75m x 75m
 
-You can't handle it!
+Das wird zu viel!
 
-=== Now Germany is your Garden!
+=== Deutschland ist dein Garten!
 
-=== Or Europe
+=== Oder Europa
 
 [NOTE.speaker]
 ====
-if you are running in the Cloud
+if you are running in the Cloud it's the world.
 ====
 
 == Software Engineering!
@@ -72,29 +92,32 @@ image::margaret-hamilton.jpg[background, size=contain]
 Margaret Hamilton coined the term to add value to the profession.
 
 It's all about professionalizing the job.
+
+Also invented the concept of Fault Tolerance.
 ====
 
 === Nato Conference.
 
-=== Minor improvements in the decades since.
+=== Seit dem sind die Fortschritte erschreckend klein.
 
 === !
 
 [quote, Frei nach Kevlin Henney]
 ____
-Die IT entdeckt nicht ständig etwas Neues. Wir vergessen bloß was wir schon längst wussten und finden es dann wieder.
+Die IT entdeckt nicht ständig etwas Neues. Wir vergessen bloß was wir schon längst wussten und finden es dann wieder. Und geben damit an.
 ____
 
 
 == Werkzeuge
 
-=== Wir brauchen
-
 === IDE
 
 === Versions Verwaltung
 
-=== Git oder gitartige
+[NOTE.speaker]
+====
+Git oder gitartige
+====
 
 === Auch für
 
@@ -199,35 +222,35 @@ Baut sauber strukturierte Code, dann ist reuse möglich, wenn nötig.
 We are actually pretty good at reuse
 ====
 
-=== Build a VW Golf
+=== Baut mir einen PKW!
 
-With parts from Bulldozers and Windfarms
+Mit Teilen von Baggern und Windfarmen.
 
 +
 
-15kg custom parts
+15kg neue Teile.
 
-== Prozesse, Menschen und komplexe Systeme
+== Prozesse, Menschen und komplexe Systeme.
 
-=== Classical PM builds on core assumptions.
+=== Klassisches PM basiert auf Annahmen.
 
-=== You can employ central control.
+=== Zentrale Kontrolle ist möglich.
 
-=== Design is the hard part.
+=== Design ist der schwierige Teil.
 
-=== Implementing the design takes long.
+=== Die Implementierung dauert lange.
 
-=== Lots of simple tasks.
+=== Viele einfache Aufgaben.
 
-=== Lots of repetitive tasks.
+=== Viel wiederkehrende Aufgaben.
 
-=== You can define "done" without use.
+=== Wir wissen wann wir fertig sind ohne es zu benutzen.
 
-=== Change is expensive
+=== Änderungen sind teuer.
 
-=== All but one are wrong.
+=== Fast alle Annahmen sind falsch.
 
-=== Software Development is complex.
+=== Software Development ist komplex.
 
 [NOTE.speaker]
 ====
@@ -240,7 +263,6 @@ Minute details can have huge effects.
 You can't predict the future from the past.
 ====
 
-
 === !
 
 [quote, Cilliers, Paul, "Knowing Complex Systems" Managing organizational complexity : philosophy, theory and application. - Greenwich, Conn. : IAP - Information Age Pub. Inc, ISBN 1593113196. - 2005, p. 7-19]
@@ -248,16 +270,16 @@ ____
 There is no accurate (or rather, perfect) representation of the system which is simpler than the system itself.
 ____
 
-=== Design is still hard.
+=== Design ist tatsächlich schwierig.
 
 [NOTE.speaker]
 ====
 The largest part of software design happens during coding.
 ====
 
-=== Implementing the design is easy.
+=== Die Implementierung ist einfach.
 
-It's called compiling.
+Wir nennen es kompilieren.
 
 === !
 
@@ -266,9 +288,9 @@ ____
 The replication of multiple copies of a software system is the phase of software manufacture which corresponds to the production phase in other areas of engineering.
 ____
 
-=== There are few simple tasks.
+=== Kaum einfache Aufgaben.
 
-=== There are no repetitive tasks.
+=== Kaum wiederkehrende Aufgaben.
 
 [NOTE.speaker]
 ====
@@ -280,7 +302,7 @@ Simple repetitive tasks get bundled into two tasks.
 One task is pretty hard, the other is trivial and is done while slurping the morning coffee.
 ====
 
-=== Software is done when it's used.
+=== Software ist fertig wenn sie genutzt wird.
 
 [NOTE.speaker]
 ====
@@ -288,7 +310,7 @@ Verification: Matches specification.
 Validation: Is fit for intended use.
 ====
 
-=== Change of software can be cheap
+=== Änderungen können preiswert sein.
 
 [NOTE.speaker]
 ====
@@ -318,7 +340,7 @@ If you build just from one side the problem goes away because you can aim at the
 In software this is very often rather easy.
 ====
 
-=== Simplicity
+=== Einfachheit
 
 [quote, Kent Beck, Extreme Programming explained]
 ____
@@ -349,25 +371,25 @@ ____
 4. Write some more code and iterate to what you feel is the correct solution.
 ____
 
-=== Unit Tests instead of Experimenting.
+=== Unit Tests statt ausprobieren.
 
-Minutes -> Subseconds.
+Minuten -> Sekundenbruchteile.
 
-=== Integration Tests instead of Manual Tests
+=== Integration Tests statt of manueller Tests.
 
-Weeks, Months -> Seconds.
+Wochen, Monate -> Sekunden.
 
-=== Retrospectives
+=== Retrospektiven
 
-Months, Years -> Weeks.
+Monate, Jahre -> Wochen.
 
-=== Daily Standups.
+=== Standups.
 
-??? -> Day.
+??? -> 1 Tag.
 
-=== Frequent Deployments.
+=== Häufige Deployments.
 
-Months, Years -> Days, Weeks.
+Monate, Jahre -> Tage, Wochen.
 
 === !
 
@@ -385,36 +407,38 @@ vs
 1st Commit on 2nd day of work and huge refactoring after 6 months.
 ====
 
-=== Beware of the Specification
+=== Vorsicht Spezifikation.
 
 http://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/
 
-=== But also
+=== Aber auch.
 
 http://dilbert.com/strip/2016-03-06
 
-== Menschen
+== Menschen.
 
-=== Melonen Projekte
+=== Melonen Projekte.
 
-=== Werte von XP
+=== Werte von XP.
 
-=== Einfachheit
+=== Einfachheit.
 
-=== Feedback
+=== Feedback.
 
-=== Mut
+=== Mut.
 
-=== Respekt
+=== Respekt.
 
-=== Kommunikation
+=== Kommunikation.
 
-=== Der Fisch stinkt vom Kopf aus
+=== Der Fisch stinkt vom Kopf aus.
 
 [quote, Peter Drucker(?)]
 ____
 Culture Eats Strategy for Breakfast
 ____
+
+=== Wie rettet man einen Kerbal?
 
 == Fallstricke.
 
@@ -444,19 +468,72 @@ Vieles muss man erst lernen.
 Das braucht Zeit und Hilfe von anderen.
 ====
 
-== The latest Technology Trend
+== Microservices.
 
-=== Microservices.
+[quote, Doug McIlroy]
+____
+This is the Unix philosophy: Write programs thata do one thing and do it well.
+____
+
+=== Unabhängiges Deployment.
 
 [quote, Harr, NATO Software Engineering Conference 1968]
 ____
  We definitely need better techniques for changing a program in the field while continuing to provide service.
 ____
 
+=== Late binding.
+
+[quote, Alan Kay]
+____
+OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things.
+____
+
+
+[quote, Wikipedia]
+____
+The term "late binding" dates back to at least the 1960s, where it can be found in Communications of the ACM. The term was widely used to describe calling conventions in languages like Lisp, though usually with negative connotations about performance.
+____
+
+[NOTE.speaker]
+====
+Again the 60s.
+
+Note the correlation to performance.
+====
+
+=== Concurrency
+
+[quote, Russel Winder, Message Passing Leads to Better Scalability in Parallel Systems"]
+____
+Languages such as Erlang (and occam before it) have shown that processes are a very successful mechanism for programming concurrent and parallel systems.
+____
+
+
+=== Reliability.
+
 [quote, NATO Software Engineering Conference 1968]
 ____
 I just want to make the point that reliability really is a design issue, in the sense that unless you are conscious
 of the need for reliability throughout the design, you might as well give up.
+____
+
+=== Fehlertoleranz.
+
+Margaret Hamilton für Apollo 11.
+
+Actor Model (1973)
+
+=== Dependency Management
+
+[quote, Clemens Szyperski, "Component Software Beyond Object-Oriented Programming"]
+____
+A software component is a unit of composition with contractually specified interfaces and explicit context dependencies only.
+____
+
+[quote, Clemens Szyperski, "Component Software Beyond Object-Oriented Programming"]
+____
+A software component can be deployed independently and is subject ot third-party composition..
 ____
 
 == !
@@ -470,6 +547,8 @@ ____
 == Referenzen
 
 https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf[On the Criteria To Be Used in Decomposing Systems into Modules]
+
+http://www.scrummanager.net/files/nato1968e.pdf[Software Engineering, Report on a conference sponsored by the NATO SCIENCE COMMITTEE]
 
 include::self.ad[]
 
