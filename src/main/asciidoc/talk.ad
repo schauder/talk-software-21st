@@ -319,14 +319,15 @@ Tests and clean code
 
 == Alternativen
 
-===!
+=== !
 
-=== Iterativ und Inkrementell
 
 [quote, E. E. David, NATO Software Engineering Conference, 1968]
 ____
 Define a subset of the system which is small enough to bring to an operational state [...] then build on that subsystem.
 ____
+
+=== Iterativ und Inkrementell
 
 === Vermeidet parallele Arbeit.
 
@@ -543,6 +544,7 @@ ____
 The future is already here -- it's just not very evenly distributed.
 ____
 
+include::self.ad[]
 
 == Referenzen
 
@@ -550,7 +552,6 @@ https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.
 
 http://www.scrummanager.net/files/nato1968e.pdf[Software Engineering, Report on a conference sponsored by the NATO SCIENCE COMMITTEE]
 
-include::self.ad[]
 
 
 
