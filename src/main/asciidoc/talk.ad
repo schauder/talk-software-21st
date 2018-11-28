@@ -70,15 +70,21 @@ Ich nenne das 1 CSU (Computer Size Unit)
 
 === 15m x 15m
 
+image::flower.png[canvas,size=contain]
+
 === Du erbst.
 
 === 75m x 75m
+
+image::tree.png[canvas,size=contain]
 
 Das wird zu viel!
 
 === Deutschland ist dein Garten!
 
-=== Oder Europa
+=== !
+
+image::world.png[canvas,size=contain]
 
 [NOTE.speaker]
 ====
@@ -98,27 +104,50 @@ It's all about professionalizing the job.
 Also invented the concept of Fault Tolerance.
 ====
 
-=== Nato Conference.
+=== 1968
 
-=== Seit dem sind die Fortschritte erschreckend klein.
+image::nato.png[canvas,size=contain]
 
 === !
 
-[quote, Frei nach Kevlin Henney]
-____
-Die IT entdeckt nicht ständig etwas Neues. Wir vergessen bloß was wir schon längst wussten und finden es dann wieder. Und geben damit an.
-____
-
-
-== Werkzeuge
-
-=== IDE
-
-=== Versions Verwaltung
+image::snail.png[canvas,size=contain]
 
 [NOTE.speaker]
 ====
+erschreckend wenig Fortschritt
+====
+
+=== !
+
+[quote, Uwe Frie drichsen, The 7 quests of resilient software design]
+____
+In IT, we suffer from continuous collective amnesia and we are even proud of it.
+____
+
+
+== !
+
+image::tools.png[canvas,size=contain]
+
+[NOTE.speaker]
+====
+Tools
+====
+
+
+=== !
+
+image::intellij.svg[canvas,size=contain]
+
+=== !
+
+image::blockchain.png[canvas,size=contain]
+
+[NOTE.speaker]
+====
+Versions Verwaltung
 Git oder gitartige
+Einzig vernünftige Verwendung von Blockchains
 ====
 
 === Auch für
@@ -129,7 +158,15 @@ Git oder gitartige
 
 === Issue Tracker
 
+image::label.png[canvas,size=contain]
+
 === Referenzen zwischen Commits und Issues
+
+image::blockchain.png[canvas,size=contain]
+
+image::label.png[canvas,size=contain]
+
+
 
 === Automatisierte Tests
 
@@ -550,10 +587,10 @@ include::self.ad[]
 
 == Referenzen
 
-https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf[On the Criteria To Be Used in Decomposing Systems into Modules]
-
 http://www.scrummanager.net/files/nato1968e.pdf[Software Engineering, Report on a conference sponsored by the NATO SCIENCE COMMITTEE]
 
+https://www.slideshare.net/ufried/the-7-quests-of-resilient-software-design[The 7 quests of resilient software design]
 
 
+https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf[On the Criteria To Be Used in Decomposing Systems into Modules]
 
