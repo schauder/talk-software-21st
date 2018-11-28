@@ -119,7 +119,7 @@ erschreckend wenig Fortschritt
 
 === !
 
-[quote, Uwe Frie drichsen, The 7 quests of resilient software design]
+[quote, Uwe Friedrichsen, "The 7 quests of resilient software design"]
 ____
 In IT, we suffer from continuous collective amnesia and we are even proud of it.
 ____
@@ -162,13 +162,11 @@ image::label.png[canvas,size=contain]
 
 === Referenzen zwischen Commits und Issues
 
-image::blockchain.png[canvas,size=contain]
-
-image::label.png[canvas,size=contain]
-
-
+image::blockchain-label.png[canvas,size=contain]
 
 === Automatisierte Tests
+
+image::dummy.png[canvas,size=contain]
 
 === Continuous Integration
 
@@ -179,10 +177,14 @@ image::label.png[canvas,size=contain]
 Maven oder vergleichbares.
 ====
 
-=== Haben reicht nicht.
+=== !
+
+image::fool.png[canvas,size=contain]
 
 [NOTE.speaker]
 ====
+Haben reicht nicht.
+
 Man muss sie auch nutzen können.
 
 Ohne Maus.
@@ -190,30 +192,48 @@ Ohne Maus.
 
 == Software Design
 
+image::compass.png[canvas,size=contain]
+
 === Modularisierung
+
+image::aggregate.png[canvas,size=contain]
 
 === !
 
-[quote, Christopher Alexander, Notes on the Synthesis of Form, 1964]
+[quote, Christopher Alexander, "Notes on the Synthesis of Form, 1964"]
 ____
 We may therefore picture the process of formmaking as the action of a series of subsystems, all interlinked, yet sufficiently free of one another to adjust independently in a feasilbe amount of time. It works, because the cycles of correction and recorrection, which occur during adaptation, are restricted to one subsystem at a time.
 ____
 
 === !
 
-[quote, Parnas, On the Criteria To Be Used in Decomposing Systems into Modules - 1972]
+[quote, Parnas, "On the Criteria To Be Used in Decomposing Systems into Modules, 1972"]
 ____
 It is almost always incorrect to begin the decomposition
 of a system into modules on the basis of a flowchart.
 ____
 
-=== Flowchart einer Webapplikation
+=== !
 
-=== Package Struktur
+image::dataflow.png[canvas,size=contain]
+
+[NOTE.speaker]
+====
+Let's look at Flowchart einer Webapplikation
+====
 
 === !
 
-[quote, Parnas, On the Criteria To Be Used in Decomposing Systems into Modules - 1972]
+image::packages.png[canvas,size=contain]
+
+[NOTE.speaker]
+====
+Package Struktur
+====
+
+=== !
+
+[quote, Parnas, On the Criteria To Be Used in Decomposing Systems into Modules' 1972]
 ____
 instead that one begins with a list of
 difficult design decisions or design decisions which are
@@ -231,22 +251,41 @@ Irgend wann auch:
  Welche Art von Datenbank verwende ich?
 ====
 
-=== Packages, Klassen, Methoden als Baum
+=== !
 
-// todo image
-
-=== Wo ändert sich etwas?
-
-// todo image
-
-=== Oder so?
-
-// todo image
-
-=== Ein Rant in Sachen Reuse.
+image::tree-structure.png[canvas,size=contain]
 
 [NOTE.speaker]
 ====
+structure of packages, classes and methods in an app
+====
+
+=== !
+
+image::tree-structure-bad.png[canvas,size=contain]
+
+[NOTE.speaker]
+====
+Typical change affects UI, Persistence and domain
+====
+
+=== !
+
+image::tree-structure-better.png[canvas,size=contain]
+
+[NOTE.speaker]
+====
+Eng zusammenhalten.
+====
+
+=== !
+
+image::recycle.png[canvas,size=contain]
+
+[NOTE.speaker]
+====
+Let's talk about reuse
+
 Reuse ist teuer.
 
 Es ist eine Investition.
@@ -254,7 +293,7 @@ Es ist eine Investition.
 Baut sauber strukturierte Code, dann ist reuse möglich, wenn nötig.
 ====
 
-=== ~99% reuse
+=== ~99%
 
 [NOTE.speaker]
 ====
@@ -271,23 +310,39 @@ Mit Teilen von Baggern und Windfarmen.
 
 == Prozesse, Menschen und komplexe Systeme.
 
+image::organization.png[canvas,size=contain]
+
 === Klassisches PM basiert auf Annahmen.
 
 === Zentrale Kontrolle ist möglich.
 
+image::spider.png[canvas,size=contain]
+
 === Design ist der schwierige Teil.
+
+image::compass.png[canvas,size=contain]
 
 === Die Implementierung dauert lange.
 
 === Viele einfache Aufgaben.
 
+image::hammer.png[canvas,size=contain]
+
 === Viel wiederkehrende Aufgaben.
+
+image::hammer.png[canvas,size=contain]
 
 === Wir wissen wann wir fertig sind ohne es zu benutzen.
 
+image::done.png[canvas,size=contain]
+
 === Änderungen sind teuer.
 
+image::coin.png[canvas,size=contain]
+
 === Fast alle Annahmen sind falsch.
+
+image::one-of-seven.png[canvas,size=contain]
 
 === Software Development ist komplex.
 
@@ -304,7 +359,7 @@ You can't predict the future from the past.
 
 === !
 
-[quote, Cilliers, Paul, "Knowing Complex Systems" Managing organizational complexity : philosophy, theory and application. - Greenwich, Conn. : IAP - Information Age Pub. Inc, ISBN 1593113196. - 2005, p. 7-19]
+[quote, P. Cilliers, "Knowing Complex Systems" Managing organizational complexity : philosophy, theory and application. - Greenwich, Conn. : IAP - Information Age Pub. Inc, ISBN 1593113196. - 2005, p. 7-19]
 ____
 There is no accurate (or rather, perfect) representation of the system which is simpler than the system itself.
 ____
@@ -322,7 +377,7 @@ Wir nennen es kompilieren.
 
 === !
 
-[quote, NATO Software Engineering Conference 1968]
+[quote, "NATO Software Engineering Conference, 1968"]
 ____
 The replication of multiple copies of a software system is the phase of software manufacture which corresponds to the production phase in other areas of engineering.
 ____
@@ -358,10 +413,11 @@ Tests and clean code
 
 == Alternativen
 
+image::tried-doesnt-work.png[canvas,size=contain]
+
 === !
 
-
-[quote, E. E. David, NATO Software Engineering Conference, 1968]
+[quote, E. E. David, "NATO Software Engineering Conference, 1968"]
 ____
 Define a subset of the system which is small enough to bring to an operational state [...] then build on that subsystem.
 ____
@@ -370,7 +426,18 @@ ____
 
 === Vermeidet parallele Arbeit.
 
-=== Laufenburg Bridge
+image::no-overtaking.png[canvas,size=contain]
+
+[NOTE.speaker]
+====
+Zwingt zur Definition einer Schnittstelle ohne die Anforderungen und Möglichkeiten zu verstehen.
+
+Laufenburg Brücke.
+====
+
+=== !
+
+image::bridge.png[canvas,size=contain]
 
 [NOTE.speaker]
 ====
@@ -382,28 +449,31 @@ In software this is very often rather easy.
 
 === Einfachheit
 
-[quote, Kent Beck, Extreme Programming explained]
+image::simple.png[canvas,size=contain]
+
+== !
+[quote, Kent Beck, "Extreme Programming explained, "]
 ____
 What is the simplest thing that could possibly work?
 ____
 
 === Feedback
 
-[quote, NATO Software Engineering Conference 1968]
+[quote, "NATO Software Engineering Conference, 1968"]
 ____
 The need for feedback was stressed many times.
 ____
 
 === !
 
-[quote, Alan Perlis]
+[quote, Alan Perlis, "NATO Software Engineering Conference, 1968"]
 ____
 A software system can best be designed if the testing is interlaced with the designing instead of being used after the design.
 ____
 
 === !
 
-[quote, NATO Software Engineering Conference 1968]
+[quote, Kinslow, "NATO Software Engineering Conference, 1968"]
 ____
 1. Flowchart until you think you understand the problem.
 2. Write code until you realize that you don’t.
@@ -447,17 +517,21 @@ vs
 1st Commit on 2nd day of work and huge refactoring after 6 months.
 ====
 
-=== Vorsicht Spezifikation.
+=== !
 
-http://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/
+image::specification.jpg[canvas,size=contain]
 
-=== Aber auch.
+=== !
 
-http://dilbert.com/strip/2016-03-06
+image::dilbert.jpg[canvas,size=contain]
 
 == Menschen.
 
+image::human.png[canvas,size=contain]
+
 === Melonen Projekte.
+
+image::watermelon.png[canvas,size=contain]
 
 === Werte von XP.
 
@@ -471,64 +545,120 @@ http://dilbert.com/strip/2016-03-06
 
 === Kommunikation.
 
-=== Der Fisch stinkt vom Kopf aus.
+=== !
+
+image::fish.png[canvas,size=contain]
+
+[NOTE.speaker]
+====
+ Der Fisch stinkt vom Kopf aus.
+====
+
+=== !
 
 [quote, Peter Drucker(?)]
 ____
 Culture Eats Strategy for Breakfast
 ____
 
-=== Wie rettet man einen Kerbal?
-
 == Fallstricke.
 
-=== "Agile löst unsere Probleme."
+=== !
+
+[quote]
+____
+
+Agile löst unsere Probleme.
+____
+
 
 === Cargo Cult.
 
-=== "Retrospektiven brauchen wir nicht."
+=== !
 
-=== "Management brauchen wir nicht mehr."
+[quote]
+____
+
+Retrospektiven brauchen wir nicht.
+____
+
+=== !
+
+[quote]
+____
+
+Management brauchen wir nicht mehr.
+____
 
 === The complete adventurer.
 
-[NOTE.speaker]
-====
-Vieles muss man erst lernen.
-
-Das braucht Zeit und Hilfe von anderen.
-====
-
-=== Das Generationen Problem.
+image::complete-adventurer.png[canvas,size=contain]
 
 [NOTE.speaker]
 ====
-Vieles muss man erst lernen.
+Agile stellt hohe Anforderungen a Mitarbeiter.
 
-Das braucht Zeit und Hilfe von anderen.
+Man muss nicht alles können.
+
+Aber man kann alles lernen.
+====
+
+=== Das Generationenproblem.
+
+[NOTE.speaker]
+====
+Wenige erfahrene,
+aber viele Junioren.
 ====
 
 == Microservices.
+
+=== Wie?
 
 [quote, Doug McIlroy]
 ____
 This is the Unix philosophy: Write programs thata do one thing and do it well.
 ____
 
-=== Unabhängiges Deployment.
+[NOTE.speaker]
+====
+Das Konzept ist alt und bewährt.
 
-[quote, Harr, NATO Software Engineering Conference 1968]
+Ich bin guter Hoffnung, dass das taugt.
+
+Nur neu ist es nur in der Ausprägung.
+
+Integriert für den Benutzer, separiert für Betrieb und Entwicklung
+====
+
+=== Warum?
+
+[quote, Harr, "NATO Software Engineering Conference 1968"]
 ____
  We definitely need better techniques for changing a program in the field while continuing to provide service.
 ____
 
-=== Late binding.
+[NOTE.speaker]
+====
+MS drehen sich um Deployment und Verfügbarkeit.
+
+Nicht Modularisierung.
+Modularisierung ist eine Vorbedingung
+====
+
+=== Late binding
 
 [quote, Alan Kay]
 ____
 OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things.
 ____
 
+[NOTE.speaker]
+====
+Late binding
+====
+
+=== Performance
 
 [quote, Wikipedia]
 ____
@@ -542,27 +672,30 @@ Again the 60s.
 Note the correlation to performance.
 ====
 
-=== Concurrency
+=== Scalability
 
-[quote, Russel Winder, Message Passing Leads to Better Scalability in Parallel Systems"]
+[quote, Russel Winder, Message Passing Leads to Better Scalability in Parallel Systems]
 ____
 Languages such as Erlang (and occam before it) have shown that processes are a very successful mechanism for programming concurrent and parallel systems.
 ____
 
+[NOTE.speaker]
+====
+scalability
+====
 
 === Reliability.
 
-[quote, NATO Software Engineering Conference 1968]
+[quote, Fraser, "NATO Software Engineering Conference, 1968"]
 ____
 I just want to make the point that reliability really is a design issue, in the sense that unless you are conscious
 of the need for reliability throughout the design, you might as well give up.
 ____
 
-=== Fehlertoleranz.
-
-Margaret Hamilton für Apollo 11.
-
-Actor Model (1973)
+[NOTE.speaker]
+====
+Reliability.
+====
 
 === Dependency Management
 
@@ -573,7 +706,7 @@ ____
 
 [quote, Clemens Szyperski, "Component Software Beyond Object-Oriented Programming"]
 ____
-A software component can be deployed independently and is subject ot third-party composition..
+A software component can be deployed independently and is subject ot third-party composition.
 ____
 
 == !
@@ -591,6 +724,14 @@ http://www.scrummanager.net/files/nato1968e.pdf[Software Engineering, Report on 
 
 https://www.slideshare.net/ufried/the-7-quests-of-resilient-software-design[The 7 quests of resilient software design]
 
+https://monoskop.org/images/f/ff/Alexander_Christopher_Notes_on_the_Synthesis_of_Form.pdf[Notes on the Synthesis of Form]
+
+=== Mehr Referenzen
 
 https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf[On the Criteria To Be Used in Decomposing Systems into Modules]
 
+https://www.amazon.de/Extreme-Programming-Explained-Embrace-Embracing/dp/0321278658/[Extreme Programming Explained]
+
+http://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/[CoomitStrip - Specification]
+
+http://dilbert.com/strip/2016-03-06[Dilbert Specification]
