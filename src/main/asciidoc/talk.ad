@@ -162,7 +162,7 @@ image::label.png[canvas,size=contain]
 
 === Referenzen zwischen Commits und Issues
 
-image::blockchain-label.png[canvas,size=contain]
+image::blockchain-and-label.png[canvas,size=contain]
 
 === Automatisierte Tests
 
@@ -617,7 +617,7 @@ aber viele Junioren.
 
 [quote, Doug McIlroy]
 ____
-This is the Unix philosophy: Write programs thata do one thing and do it well.
+This is the Unix philosophy: Write programs that do one thing and do it well.
 ____
 
 [NOTE.speaker]
@@ -732,6 +732,6 @@ https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.
 
 https://www.amazon.de/Extreme-Programming-Explained-Embrace-Embracing/dp/0321278658/[Extreme Programming Explained]
 
-http://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/[CoomitStrip - Specification]
+http://www.commitstrip.com/en/2016/08/25/a-very-comprehensive-and-precise-spec/[CommitStrip - Specification]
 
 http://dilbert.com/strip/2016-03-06[Dilbert Specification]
